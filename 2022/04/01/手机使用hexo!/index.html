@@ -1,0 +1,198 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>手机使用hexo! | Maho</title>
+  <meta name="author" content="马猴">
+  
+  <meta name="description" content="手机使用hexo!手机上使用hexo并不是一件难事，但在手机上写博文也确实挺难受的,但重要的还是比较方便使用的。步骤基本上和电脑一致。我只挑重点来讲。
+安装Termux,配置基本环境1234pkg update #更新pkg install nodejs pkg install gitpkg ins">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="手机使用hexo!"/>
+  <meta property="og:site_name" content="Maho"/>
+
+  
+    <meta property="og:image" content=""/>
+  
+
+  
+    <link rel="alternative" href="/atom.xml" title="Maho" type="application/atom+xml">
+  
+  
+    <link href="/favicon.png" rel="icon">
+  
+  
+  <link rel="stylesheet" href="/css/bootstrap.min.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/font-awesome.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/google-fonts.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/responsive.css" media="screen" type="text/css">  
+  <link rel="stylesheet" href="/css/sidenav.css" media="screen" type="text/css">  
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  <script src="/js/jquery-2.0.3.min.js"></script>
+
+  <!-- analytics -->
+  
+
+<meta name="generator" content="Hexo 6.2.0"></head>
+
+<body id="body" data-spy="scroll" data-target=".toc">
+  <div class="container" id="container">
+	<div class="content">
+	  <div class="page-header">		
+  <h1><a class="brand" href="/">Maho</a><span class="split"></span><span class="title">手机使用hexo!</span><span class="date" id="title-date"><i class="fa fa-clock-o"></i> 2022-04-01</span></h1>
+</div>		
+
+<div class="row page">
+  <!-- cols -->	
+  
+  <div class="col-xs-12 col-sm-3 col-md-3 toc"> 
+	<!-- toc -->
+<script type="text/javascript">
+		jQuery(document).ready(function() {
+ 		   generateWikiTOC('.note', '.toc',  2 , 2 );
+		});
+</script>
+  </div><!-- col-md-3 -->
+  
+  
+
+  
+  <div class="col-xs-12 col-sm-9 col-md-9 note">
+	
+
+	  <!-- content -->
+	  <h2 id="手机使用hexo"><a href="#手机使用hexo" class="headerlink" title="手机使用hexo!"></a>手机使用hexo!</h2><p>手机上使用hexo并不是一件难事，但在手机上写博文也确实挺难受的,但重要的还是比较方便使用的。步骤基本上和电脑一致。我只挑重点来讲。</p>
+<h2 id="安装Termux-配置基本环境"><a href="#安装Termux-配置基本环境" class="headerlink" title="安装Termux,配置基本环境"></a>安装Termux,配置基本环境</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">pkg update #更新</span><br><span class="line">pkg install nodejs </span><br><span class="line">pkg install git</span><br><span class="line">pkg install openssh #用于连接Github</span><br></pre></td></tr></table></figure>
+
+<h2 id="链接手机目录"><a href="#链接手机目录" class="headerlink" title="链接手机目录"></a>链接手机目录</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">termux-setup-storage</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li></li>
+</ul>
+<p>  注意!可以不用这步操作，此步只是为了方便读写hexo的文件，但没有root就一定要这样做!否则hexo只是在应用的私有文件夹里面!</p>
+<h2 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h2>  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g #正常安装就是</span><br></pre></td></tr></table></figure>
+
+<p>  接下来你可以直接复制电脑端上的hexo文件到手机目录，也可以直接cd进入手机目录进行安装，这里我就不详细说明了，简单的写一下要用的命令和注意</p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo init #在目标文件夹内执行</span><br><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+
+<h2 id="连接本地到Github"><a href="#连接本地到Github" class="headerlink" title="连接本地到Github"></a>连接本地到Github</h2>  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name “用户名”</span><br><span class="line">git config --global user.email “邮箱地址”</span><br><span class="line">ssh-keygen -t rsa -C “邮箱地址</span><br></pre></td></tr></table></figure>
+
+<p>  生成的ssh密码在Termux的私有目录下“.ssh”文件夹内可以查看，复制到你的Github账号内就行。</p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com #测试一下.出现成功就行</span><br></pre></td></tr></table></figure>
+
+<p>  ##修改hexo文件夹中_config.yml文件</p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: 填这里</span><br><span class="line">  branch: mian</span><br></pre></td></tr></table></figure>
+
+<h1 id="最后上传测试一下"><a href="#最后上传测试一下" class="headerlink" title="最后上传测试一下"></a>最后上传测试一下</h1>  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save #先安装这个才能上传</span><br><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+
+<p><strong>一气呵成!</strong><br>到此教程结束</p>
+<h1 id="Q-amp-A"><a href="#Q-amp-A" class="headerlink" title="Q&amp;A"></a>Q&amp;A</h1><p>Q:为什么无法安装nodejs?<br>答:请安装nodejs长期维护版本。<br>Q:为什么npm命令报错?<br>答:安装在Termux私有目录不会报错，如果在有软链接的情况下，在npm命令后加上 –no-bin-links可以解决。</p>
+<h1 id="如果有帮助的话就留下你的评论吧٩-´◒-96-۶"><a href="#如果有帮助的话就留下你的评论吧٩-´◒-96-۶" class="headerlink" title="如果有帮助的话就留下你的评论吧٩(´◒&#96;)۶"></a>如果有帮助的话就留下你的评论吧٩(<em>´◒&#96;</em>)۶</h1>	  
+
+	  <div>
+  		<center>
+		  <div class="pagination">
+<ul class="pagination">
+	
+	
+	
+	
+	
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+			
+			
+		
+	
+		
+	
+		
+			
+			
+			
+		
+			
+		
+	
+		
+	
+	
+	
+		<li class="prev"><a href="/2022/05/20/%E6%89%8B%E6%9C%BA%E6%B5%81%E5%85%89%E8%A1%A5%E5%B8%A7%F0%9F%8C%B9/" class="alignleft prev"><i class="fa fa-arrow-circle-o-left"></i>prev</a></li>
+	
+	<li><a href="/"><i class="fa fa-archive"></i>Home</a></li>
+	
+		<li class="next"><a href="/2022/02/16/%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E5%BC%80%E6%9C%8D%E6%8C%87%E5%8D%97/" class="alignright next">next<i class="fa fa-arrow-circle-o-right"></i></a></li>
+	
+</ul>
+</div>
+
+		</center>
+	  </div>
+	  
+	</div> <!-- col-md-9/col-md-12 -->
+	
+  </div><!-- row -->
+
+	</div>
+  </div>
+  <div class="container-narrow">
+	<footer> <p>
+  &copy; 2022 马猴
+  
+      with help from <a href="http://zespia.tw/hexo/" target="_blank">Hexo</a> and <a href="http://getbootstrap.com/" target="_blank">Twitter Bootstrap</a>. Theme by <a target="_blank" rel="noopener" href="http://github.com/wzpan/hexo-theme-wixo/">Wixo</a>.    
+</p> </footer>
+  </div> <!-- container-narrow -->
+  
+<a id="gotop" href="#">   
+  <span>▲</span> 
+</a>
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/jquery.tableofcontents.min.js"></script>
+<script src="/js/tocgenerator.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/search.js"></script> 
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+
+   <script type="text/javascript">      
+     var search_path = "search.xml";
+	 if (search_path.length == 0) {
+	 	search_path = "search.xml";
+	 }
+	 var path = "/" + search_path;
+     searchFunc(path, 'local-search-input', 'local-search-result');
+   </script>
+
+
+</body>
+</html>
