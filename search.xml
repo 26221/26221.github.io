@@ -8,7 +8,7 @@
       <link href="/2022/07/09/talks/"/>
       <url>/2022/07/09/talks/</url>
       
-        <content type="html"><![CDATA[<p>暂留</p>]]></content>
+        <content type="html"><![CDATA[<head>    ..    <script src='//unpkg.com/valine/dist/Valine.min.js'></script>    ...</head><body>    ...    <div id="vcomments"></div>    <script>        new Valine({            el: '#vcomments',            appId: 'ChWQRzuvm8SjDJvP4eylAcBL-gzGzoHsz',            appKey: '45DHrxe63l0LvUpDrNFSH6vC'        })    </script></body>]]></content>
       
       
       <categories>
