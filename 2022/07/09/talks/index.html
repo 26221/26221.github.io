@@ -6,14 +6,12 @@
   <title>留言 | Maho</title>
   <meta name="author" content="未来道具研究所">
   
-  <meta name="description" content="测试
-
-
-
-
-var gitment = new Gitment({
-  id: &#39;location.href&#39;, // 可选。默认为 location.href  owner: &#39;api2275&#39;,  //改你自己的名字
-    repo: &#39;Https://github.com/api2275/">
+  <meta name="description" content="var gitment = new Gitment({
+  id: &#39;location.href&#39;, // 可选。默认为 location.href
+  owner: &#39;api2275&#39;,
+  repo: &#39;https://github.com/api2275/talks&#39;,
+  oauth: {
+">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -78,17 +76,21 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 	  
 
 	  <!-- content -->
-	  <p>测试</p>
-<div id="container"></div>
+	  <div id="container"></div>
 <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
 <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
 <script>
 var gitment = new Gitment({
-  id: 'location.href', // 可选。默认为 location.href  owner: 'api2275',  //改你自己的名字
-    repo: 'Https://github.com/api2275/talks',  //专门储存评论一个GitHub仓库  
-    oauth: {    client_id: '7f87918442cd98d36e14', //改为你自己的，下同    client_secret: 'bd74392742bc50f8daec3af0980e1e0e24b007d0',   },
-    })gitment.render('container')
-    </script>	  
+  id: 'location.href', // 可选。默认为 location.href
+  owner: 'api2275',
+  repo: 'https://github.com/api2275/talks',
+  oauth: {
+    client_id: '7f87918442cd98d36e14',
+    client_secret: 'bd74392742bc50f8daec3af0980e1e0e24b007d0',
+  },
+})
+gitment.render('container')
+</script>	  
 
 	  <div>
   		<center>
