@@ -8,7 +8,7 @@
       <link href="/2022/07/09/talks/"/>
       <url>/2022/07/09/talks/</url>
       
-        <content type="html"><![CDATA[<head>    ..    <script src='//unpkg.com/valine/dist/Valine.min.js'></script>    ...</head><body>    ...    <div id="vcomments"></div>    <script>        new Valine({            el: '#vcomments',            appId: 'ChWQRzuvm8SjDJvP4eylAcBL-gzGzoHsz',            appKey: '45DHrxe63l0LvUpDrNFSH6vC'        })    </script></body>]]></content>
+        <content type="html"><![CDATA[<head>    <pre><code>&lt;script src=&#39;//unpkg.com/valine/dist/Valine.min.js&#39;&gt;&lt;/script&gt;</code></pre></head><body>    <pre><code>&lt;div id=&quot;vcomments&quot;&gt;&lt;/div&gt;&lt;script&gt;    new Valine(&#123;        el: &#39;#vcomments&#39;,        appId: &#39;ChWQRzuvm8SjDJvP4eylAcBL-gzGzoHsz&#39;,        appKey: &#39;45DHrxe63l0LvUpDrNFSH6vC&#39;    &#125;)&lt;/script&gt;</code></pre></body>]]></content>
       
       
       <categories>
