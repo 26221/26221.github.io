@@ -15,7 +15,7 @@
   
   <title>
     
-      群晖实现免端口访问 Typecho 博客教程 🌐💻 
+      群晖实现免端口访问 Typecho 博客教程 
       
       
       |
@@ -53,6 +53,8 @@
 
   
 
+  
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
   
 
   <script>
@@ -155,11 +157,11 @@
   <!-- 文章内容页 url形式：https://yoursite/文章标题/ -->
   <div class="container post-details" id="post-details">
     <div class="post-content">
-      <div class="post-title">群晖实现免端口访问 Typecho 博客教程 🌐💻</div>
+      <div class="post-title">群晖实现免端口访问 Typecho 博客教程</div>
       <div class="post-attach">
         <span class="post-pubtime">
           <i class="iconfont icon-updatetime mr-10" title="更新时间"></i>
-          2025-07-22 15:17:06
+          2025-07-22 16:33:48
         </span>
         
               <span class="post-tags">
@@ -247,7 +249,7 @@
           <div class="post-attach">
             <span class="post-pubtime">
               <i class="iconfont icon-updatetime mr-10" title="更新时间"></i>
-              2025-07-22 15:17:06
+              2025-07-22 16:33:48
             </span>
             
                   <span class="post-tags">
@@ -295,6 +297,36 @@
     
       <div class="comments-container">
         
+  <div id="waline-comments"></div>
+
+  <script>
+    function loadWalineSuc(func) {
+      func({
+        el: '#waline-comments',
+        path: location.pathname,
+        serverURL: 'https://waline-snowy-one.vercel.app/',
+        emoji: false,
+        dark: 'auto',
+        requiredMeta: ['nick', 'mail'],
+        wordLimit: 150,
+        imageUploader: false,
+        search: false,
+        reaction: false,
+        pageSize: 30,
+        lang: 'zh-CN'
+      })
+    }
+  </script>
+
+  
+    <link rel="stylesheet" href="/plugins/waline.css">
+    <script type="module">
+      import { init } from '/plugins/waline.mjs'
+      loadWalineSuc(init)
+    </script>
+  
+
+
 
 
 
@@ -337,6 +369,19 @@
         
     </div>
   
+  
+    <div class="footer-views">
+      
+          本站总访问量<span id="busuanzi_value_site_pv"></span>次
+        
+      
+          本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+        
+      
+          本站访客数<span id="busuanzi_value_site_uv"></span>人
+        
+      
+    </div>
   
 </div>
 
@@ -569,7 +614,7 @@
       </a>
       <div class="share-content hidden">
         
-          <a class="share-item" href="https://twitter.com/intent/tweet?text=' + %E7%BE%A4%E6%99%96%E5%AE%9E%E7%8E%B0%E5%85%8D%E7%AB%AF%E5%8F%A3%E8%AE%BF%E9%97%AE%20Typecho%20%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B%20%F0%9F%8C%90%F0%9F%92%BB + '&url=' + https%3A%2F%2Fblog.406288.xyz%2F2025%2F07%2F05%2F%25E7%25BE%25A4%25E6%2599%2596%25E5%25AE%259E%25E7%258E%25B0%25E5%2585%258D%25E7%25AB%25AF%25E5%258F%25A3%25E8%25AE%25BF%25E9%2597%25AETypecho%25E5%258D%259A%25E5%25AE%25A2%25EF%25BC%259A%25E5%25AE%258C%25E6%2595%25B4%25E5%259B%25BE%25E6%2596%2587%25E6%2595%2599%25E7%25A8%258B%2F + '" target="_blank" title="Twitter">
+          <a class="share-item" href="https://twitter.com/intent/tweet?text=' + %E7%BE%A4%E6%99%96%E5%AE%9E%E7%8E%B0%E5%85%8D%E7%AB%AF%E5%8F%A3%E8%AE%BF%E9%97%AE%20Typecho%20%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B + '&url=' + https%3A%2F%2Fblog.406288.xyz%2F2025%2F07%2F05%2F%25E7%25BE%25A4%25E6%2599%2596%25E5%25AE%259E%25E7%258E%25B0%25E5%2585%258D%25E7%25AB%25AF%25E5%258F%25A3%25E8%25AE%25BF%25E9%2597%25AETypecho%25E5%258D%259A%25E5%25AE%25A2%25EF%25BC%259A%25E5%25AE%258C%25E6%2595%25B4%25E5%259B%25BE%25E6%2596%2587%25E6%2595%2599%25E7%25A8%258B%2F + '" target="_blank" title="Twitter">
             <i class="iconfont icon-twitter"></i>
           </a>
         
