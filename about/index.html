@@ -86,8 +86,8 @@
           <a href="/">首页</a>
         </li>
       
-        <li class="nav-item" data-path="/archive/">
-          <a href="/archive/">时间</a>
+        <li class="nav-item" data-path="/archives/">
+          <a href="/archives/">时间</a>
         </li>
       
         <li class="nav-item" data-path="/tags/">
@@ -169,7 +169,17 @@
 <li><strong>简介</strong>：停更许久的Hexo小站重启中，这里会记录动漫、阅读和技术折腾，欢迎围观～</li>
 </ul>
 <p>✨ <strong>想说的话</strong>：<br>其实重新打开Hexo后台时，看到旧文章还静静躺在那里，突然觉得很亲切～ 接下来会慢慢更新，也希望这个小站能重新成为分享爱好的地方呀！</p>
-
+<div id="tcomment"></div>
+<script src="https://cdn.jsdelivr.net/npm/twikoo@1.6.44/dist/twikoo.min.js"></script>
+<script>
+twikoo.init({
+  envId: 'https://tw.406288.xyz/', // 腾讯云环境填 envId；Vercel 环境填地址（https://xxx.vercel.app）
+  el: '#tcomment', // 容器元素
+  // region: 'ap-guangzhou', // 环境地域，默认为 ap-shanghai，腾讯云环境填 ap-shanghai 或 ap-guangzhou；Vercel 环境不填
+  // path: location.pathname, // 用于区分不同文章的自定义 js 路径，如果您的文章路径不是 location.pathname，需传此参数
+  // lang: 'zh-CN', // 用于手动设定评论区语言，支持的语言列表 https://github.com/twikoojs/twikoo/blob/main/src/client/utils/i18n/index.js
+})
+</script>
       </div>
     </div>
   
